@@ -1,0 +1,145 @@
+a {
+    text-decoration: none;
+}
+
+nav .container{
+    text-align: center;
+}
+
+#about p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.background {
+    background-color:lavender;
+}
+.active{
+    color:rgb(58, 15, 158); 
+    font-weight: bold;
+}
+.navInfo {
+    word-wrap: break-word
+
+}
+/* WORK EXPERIENCE ACCORDIONS */
+.workButton {
+    border:0px; 
+    background-color:whitesmoke; 
+    padding:20px;
+    border-radius:10px;
+}
+
+.workButton:hover {
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+
+/* PROJECT ACCORDIONS */
+
+.accordion {
+    display: block;
+    width: 100%;
+    border: 0px; 
+    background-color:white; 
+    padding:10px;
+}
+
+.accordion:hover {
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+
+.text-left {
+    text-align: left !important;
+  }
+
+/*EDUCATION*/
+
+section .education .w3-container {
+    margin:0px;
+}
+
+.education-container {
+    display:flex;
+}
+
+.education-container h3 {
+    margin-top:0px;
+}
+
+.education-container p {
+    margin:0px;
+}
+
+.education-container > div{
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#coursework ul li {
+    margin-left: 15%;
+    text-align: left;
+}
+
+/*SKILLS FLEXBOX*/
+section .skills {
+    align-items: center;
+
+}
+.flex-container {
+    align-items: center;
+}
+
+.flex-container > div {
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+
+}
+.flex-container button{
+    margin: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+    
+}
+
+
+.flex-container .languages h3 {
+    margin: 10px;
+    background-color: rgb(255, 245, 231);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.flex-container .tools h3{
+    margin: 10px;
+    background-color: rgb(255, 242, 244);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*RESPONSIVE NAV BAR*/
+
+/*MOBILE - NAV DISAPPEARS*/
+@media screen and (max-width: 600px) {
+    .leftCol {
+        display: none;
+     }
+}
+
+/*TABLET -  MINIMIZED NAV INFO*/
+@media screen and (max-width: 1100px) {
+    .leftCol .w3-card-4{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .navInfo {
+        display: none;
+     }
+}
+

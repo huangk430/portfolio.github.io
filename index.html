@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<!--
+WRITTEN BY: Kelly Huang
+EMAIL:  kahuang@uci.edu
+-->
+<head>
+<title>Kelly Huang Portfolio</title>
+<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/timeline.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c262fe85d9.js" crossorigin="anonymous"></script><style>
+html,body,h2,h3,h4,h6 {font-family: "Quicksand"}
+h1,h5 {font-family: "Playfair"}
+</style>
+</head>
+<body class="background">
+
+<!-- Page Container -->
+<div class="fullPage w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+    <!-- Left Column -->
+    <div class="leftCol w3-third" style="position:fixed;">
+    
+      <div class="w3-white w3-card-4 w3-margin-right" >
+        <div class="w3-display-container" style="text-align:center;">
+          <img src="images/headshot.jpeg" style="width:40%; border-radius:50%; margin-top: 15px; border:1px solid" alt="Kelly Headshot">
+        </div>
+        <div class="w3-container">
+          <h1 class="w3-center">Kelly Huang</h2>
+          <div class="navInfo" style="margin-left:30px">
+            <p class="w3-text-grey"><i class="fa fa-briefcase fa-fw w3-margin-right w3-small w3-text-grey"></i>Computer Science Student</p>
+            <p class="w3-text-grey"><i class="fa fa-home fa-fw w3-margin-right w3-small w3-text-grey"></i>Irvine, CA</p>
+            <p class="w3-text-grey"><i class="fa fa-envelope fa-fw w3-margin-right w3-small w3-text-grey"></i>huangk430@gmail.com</p>
+          </div>
+          <hr>
+          <!-- Links -->
+          <nav>
+            <div class="container">
+              <a href="#about" class="active about"><p>About</p></a>
+              <a href="#work" class="work"><p>Work Experience</p></a>
+              <a href="#projects" class="projects"><p>Projects</p></a>
+              <a href="#education" class="education"><p>Education</p></a>
+              <a href="#skills" class="skills"><p>Skills</p></a>
+              <a href="./KELLYRESUME2022.docx.pdf" download="Kelly Huang Resume" target="_blank">
+                <button class="w3-button w3-white w3-border" aria-label="download">
+                  Download CV <i class="fa-solid fa-arrow-up-from-bracket w3-text-grey"></i>
+                </button>
+              </a>
+            </div>
+          </nav>
+          <!--End Links-->
+          <br>
+        </div>
+      </div><br>
+    </div>
+    <!-- Left Column -->
+
+    <!-- Right Column -->
+    <div class="rightCol w3-twothird" style="float:right">
+      <!--About-->
+
+      <section class="w3-container w3-card w3-white w3-margin-bottom" id="about">
+        <h2 class="w3-padding-16 w3-center"><i class="fa-solid fa-face-smile w3-margin-right w3-large"></i>About Me</h2>
+        <p>Hello!
+          I am currently a senior computer science student at UC Irvine.
+          I have full stack development internship experience, my current developer job at school, and various class projects. 
+          I have experience working with APIs, large databases, frontend development, and microservices. Feel free to message me and connect!</p>
+        </section>
+      <!--End About-->
+      <!--Work Experience-->
+      <section class="w3-container w3-card w3-white w3-margin-bottom" id="work">
+        <h2 class="w3-padding-16 w3-center"><i class="fa fa-suitcase fa-fw w3-margin-right w3-large"></i>Work Experience</h2>
+        <div class="row example-split" style="margin-left: 80px;">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+              <ul class="timeline timeline-split">
+                  <li class="timeline-item">
+                      <div class="timeline-info">
+                          <span style="color:gray"><i class="fa fa-calendar fa-fw"></i> Jan 2022 - Current</span>
+                      </div>
+                      <div class="timeline-marker"></div>
+                      <div class="timeline-content">
+                        <button class="workButton" onclick="accordion('OIT')">
+                          <h3 class="timeline-title">Student Software Developer</h3>
+                          <p class="w3-text-grey">UC Irvine - Office of Information & Technology</p>
+                        </button>
+                          <div id="OIT" class="w3-container w3-hide w3-margin-top">
+                            <ul>
+                              <li>
+                                Application development using Spring and Java             
+                              </li>
+                              <li>
+                                Generate SQL queries to resolve issues in the financial aid database              
+                              </li>
+                              <li>
+                                Jira, Agile methodologies, Jenkins, ServiceNow, Zena.              
+                              </li>
+                            </ul>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="timeline-item">
+                      <div class="timeline-info">
+                          <span style="color:gray"><i class="fa fa-calendar fa-fw"></i> Jun 2022 - Sept 2022</span>
+                      </div>
+                      <div class="timeline-marker"></div>
+                      <div class="timeline-content">
+                        <button class="workButton" onClick="accordion('Udemy')">
+                          <h3 class="timeline-title">Software Engineer Intern</h3>
+                          <p class="w3-text-grey">Udemy</p>       
+                        </button>
+                        <div id="Udemy" class="w3-container w3-hide w3-margin-top">
+                          <ul>
+                            <li>
+                              Application development using React, Python, Django
+                            </li>
+                            <li>
+                              Developed APIs using gRPC and Kotlin microservices
+                            </li>
+                            <li>
+                              Built applications that improved efficiency of daily operations
+                            </li>
+                            <li>
+                              Experience with Agile development principles and integration testing
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </section>
+      <!--End Work Experience-->
+      <!--Projects-->
+      <section class="w3-container w3-card w3-white  w3-margin-bottom" id="projects">
+        <h2 class="w3-padding-16 w3-center"><i class="fa-solid fa-screwdriver-wrench w3-margin-right w3-large w3-text-black"></i>Projects</h2>
+        <div class="w3-container">
+          <button class="accordion text-left" onclick="accordion('vibecheck')">
+            <h4 style="margin:0px"><i class="fa-brands fa-spotify w3-text-green"></i>  VibeCheck  <i class="fa-solid fa-caret-down w3-small" style="float:right"></i></h4>
+            <p class="w3-text-grey" style="margin:0px">Spotify Web Application</p>
+          </button>
+          <div id="vibecheck" class="w3-container w3-hide w3-margin-top w3-center">
+            <div style="text-align:left">
+              <p>An application that generates a recommended playlist based on your "vibes"</p>
+              <p> Built with Spotify API, Django, W3.CSS</p>
+            </div>
+            <a href="https://github.com/huangk430/vibecheck" target="_blank">
+              <button class="w3-button w3-white w3-border">
+                View Github
+              </button>
+            </a>
+          </div>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <button class="accordion text-left" onclick="accordion('fabflix')">
+            <h4 style="margin:0px"><i class="fa-solid fa-film w3-text-purple"></i>  FabFlix  <i class="fa-solid fa-caret-down w3-small" style="float:right"></i></h4>
+            <p class="w3-text-grey" style="margin:0px">Movie E-Commmerce Application</p>
+          </button>
+          <div id="fabflix" class="w3-container w3-hide w3-margin-top w3-center">
+            <div style="text-align:left">
+              <p>FabFlix is a web-based ecommerce application that allows customers to locate movies, place them in a shopping cart, and 
+                checkout/pay with Stripe (similar to PayPal). The design uses microservices, identity management, and an API gateway.</p>
+            </div>
+            <a href="https://github.com/huangk430/FabFlix" target="_blank">
+              <button class="w3-button w3-white w3-border">
+                View Github
+              </button>
+            </a>
+          </div>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <button class="accordion text-left" onclick="accordion('searchengine')">
+            <h4 style="margin:0px"><i class="fa-solid fa-magnifying-glass w3-text-blue"></i>  Search Engine  <i class="fa-solid fa-caret-down w3-small" style="float:right"></i></h4>
+            <p class="w3-text-grey" style="margin:0px">Python Web Crawler</p>
+          </button>
+          <div id="searchengine" class="w3-container w3-hide w3-margin-top w3-center">
+            <div style="text-align:left">
+              <p>A python search engine from scratch that handles 10,000+ UCI websites with a query response time under 300ms</p>
+            </div>
+            <a href="https://github.com/huangk430/search-engine" target="_blank">
+              <button class="w3-button w3-white w3-border">
+                View Github
+              </button>
+            </a>
+          </div>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <button class="accordion text-left" onclick="accordion('projectrunway')">
+            <h4 style="margin:0px"><i class="fa-solid fa-shirt w3-text-pink"></i>  Project Runway  <i class="fa-solid fa-caret-down w3-small" style="float:right"></i></h4>
+            <p class="w3-text-grey" style="margin:0px">Machine Learning Investigation</p>
+          </button>
+          <div id="projectrunway" class="w3-container w3-hide w3-margin-top w3-center">
+            <div style="text-align:left">
+              <p>An Investigation of Classification Methods for Fashion MNIST Database We explore the KNN, 
+                logistic, neural network, and decision tree classifiers with the Fashion MNIST database using sklearn. 
+              </p>
+            </div>
+            <a href="https://github.com/huangk430/project-runway" target="_blank">
+              <button class="w3-button w3-white w3-border">
+                View Github
+              </button>
+            </a>
+          </div>
+          <hr>
+        </div>
+      </section>
+      <!--End Projects-->
+      <!--Education-->
+      <section class="w3-container w3-card w3-white w3-margin-bottom" id="education"> 
+        <h2 class="w3-padding-16 w3-center"><i class="fa-solid fa-graduation-cap w3-margin-right w3-large w3-text-black"></i>Education </h2>
+          <button class="accordion text-left w3-margin-bottom" onclick="accordion('coursework')">
+            <i class="fa-solid fa-caret-down w3-small" style="float:right"></i>
+            <div class="education-container">
+              <div>
+                <img src="./images/uci_logo.png" alt="UCI Logo"/>
+              </div>
+              <div>
+                <h3>University of California, Irvine</h3>
+                <p class="w3-text-grey">Bachelor of Science - Computer Science </p>
+                <p class=""><i class="fa fa-calendar fa-fw"></i> Sept 2018 - June 2023</p>
+              </div>
+            </div>
+          </button>
+          <div id="coursework" class="w3-container w3-hide w3-margin-top w3-center">
+            <div>
+              <h3>Relevant Coursework</h3>
+              <ul>
+                <li>
+                  Data Structures & Algorithms
+                </li>
+                <li>
+                  Machine Learning
+                </li>
+                <li>
+                  Information Retrieval
+                </li>
+                <li>
+                  Next Generation Search Systems
+                </li>
+                <li>
+                  Operating Systems
+                </li>
+              </ul>
+            </div>
+        </div>
+      </section>
+      <!--End Education-->
+      <!--Skills-->
+      <section class="skills w3-container w3-card w3-white w3-margin-bottom" id="skills"> 
+        <h2 class="w3-padding-16 w3-center"><i class="fa-solid fa-gear w3-margin-right w3-large w3-text-black"></i>Skills</h2>
+        <div class="flex-container">
+          <div class="languages">
+            <h3>Languages</h3>
+            <button class="w3-button w3-medium w3-white w3-border">Python</button>
+            <button class="w3-button w3-medium w3-white w3-border">Java</button>
+            <button class="w3-button w3-medium w3-white w3-border">C</button>
+            <button class="w3-button w3-medium w3-white w3-border">C++</button>
+            <button class="w3-button w3-medium w3-white w3-border">MIPS</button>
+            <button class="w3-button w3-medium w3-white w3-border">JavaScript</button>
+            <button class="w3-button w3-medium w3-white w3-border">HTML</button>
+            <button class="w3-button w3-medium w3-white w3-border">CSS</button>
+            <button class="w3-button w3-medium w3-white w3-border">JavaScript</button>
+          </div>
+          <div class="tools">
+            <h3>Tools</h3>
+            <button class="w3-button w3-medium w3-white w3-border">Git</button>
+            <button class="w3-button w3-medium w3-white w3-border">Docker</button>
+            <button class="w3-button w3-medium w3-white w3-border">REST API</button>
+            <button class="w3-button w3-medium w3-white w3-border">gRPC</button>
+            <button class="w3-button w3-medium w3-white w3-border">Django</button>
+            <button class="w3-button w3-medium w3-white w3-border">MySQL</button>
+            <button class="w3-button w3-medium w3-white w3-border">Spring</button>
+            <button class="w3-button w3-medium w3-white w3-border">React</button>
+            <button class="w3-button w3-medium w3-white w3-border">Agile</button>
+            <button class="w3-button w3-medium w3-white w3-border">Jira</button>
+            <button class="w3-button w3-medium w3-white w3-border">Jenkins</button>
+            <button class="w3-button w3-medium w3-white w3-border">sklearn</button>
+            <button class="w3-button w3-medium w3-white w3-border">Machine Learning</button>
+          </div>
+        </div>
+      </section>
+      <!--End Skills-->
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-center w3-margin-top">
+  <a href="../a1-personal-portfolio-huangk430/index.html">
+    <i class="fa-solid fa-circle-chevron-up w3-xxlarge" style="float:right;margin-right:30px;"></i></a>
+</footer>
+<p style="display:none">
+  <a href="http://validator.w3.org/check?uri=referer">
+     W3C validator
+  </a>
+</p>
+
+	<!-- MAIN JS -->
+	<script src="js/base.js"></script>
+</body>
+</html>
